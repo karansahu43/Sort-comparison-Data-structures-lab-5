@@ -1,0 +1,30 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "g++ - Build and debug active file",
+            "type": "cppdbg",
+            "request": "launch",
+            //"program": Needs full path to the exe/ ctr+shift+~ opens termal then pwd
+            "program": "/mnt/c/Users/karan/Desktop/Sort-comparison-Data-structures-lab-5/KaranSahuLab5Part2timer/a.out", 
+            "args": [],
+            "stopAtEntry": false,
+            "cwd": "${workspaceFolder}",
+            "environment": [],
+            "externalConsole": false,
+            "MIMode": "gdb",
+            "setupCommands": [
+                {
+                    "description": "Enable pretty-printing for gdb",
+                    "text": "-enable-pretty-printing",
+                    "ignoreFailures": true
+                }
+            ],
+            "preLaunchTask": "g++ build active file", // make sure its the same as "label": in tasks.json
+            "miDebuggerPath": "/usr/bin/gdb"
+        }
+    ]
+}

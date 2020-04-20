@@ -1,0 +1,21 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            //"label": "My Task",   Chanhe to "preLaunchTask" in launch.json
+            "label": "g++ build active file",
+            //"command": "echo hello",  change to relavent compiler
+            "command": "g++",
+            "type": "shell",
+            //"args": [],   add relavent arguments
+            "args": ["-g", "driverP2.cpp"],
+            "problemMatcher": [
+                "$tsc"
+            ],
+            "presentation": {
+                "reveal": "always"
+            },
+            "group": "build"
+        }
+    ]
+}
